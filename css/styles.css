@@ -34,6 +34,18 @@
   --logo-color: #2196f3;
   --logo-black: #212121;
   --logo-white: #ffffff;
+  --fill-accent: #2196f3;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 h1,
@@ -786,7 +798,6 @@ footer {
 .tel-label,
 .email-label,
 .comment-label {
-  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   color: #757575;
@@ -796,7 +807,9 @@ footer {
 .modal-tel,
 .modal-email,
 .modal-comment {
+  width: 100%;
   height: 40px;
+  margin-top: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -845,10 +858,38 @@ footer {
 }
 
 .agreement-label {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.72;
 
   color: #757575;
+}
+
+.agreement-label::before {
+  display: block;
+  content: '';
+  margin-right: 9px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  /* background-color: transparent; */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../images/svg/logo-check-empty.svg');
+}
+
+.modal-agreement:checked + .agreement-label::before {
+  background-color: var(--fill-accent);
+  border-color: var(--fill-accent);
+  background-image: url('../images/svg/logo-check.svg'), url('../images/svg/logo-check-empty.svg');
+}
+
+.modal-agreement:focus + .agreement-label::before {
+  outline: 1px solid rgba(20, 20, 39, 0.5);
+  border-radius: 2px;
 }
 
 .agreemet-link {
@@ -864,4 +905,28 @@ footer {
 
 .modal-comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-icon {
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+.modal-name:focus + .modal-icon,
+.modal-tel:focus + .modal-icon,
+.modal-email:focus + .modal-icon {
+  fill: var(--fill-accent);
+}
+
+.modal-name:focus,
+.modal-tel:focus,
+.modal-email:focus,
+.modal-comment:focus {
+  outline: none;
+  border-color: var(--fill-accent);
+}
+
+.modal-form-wrapper {
+  position: relative;
 }

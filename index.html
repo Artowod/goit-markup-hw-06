@@ -375,39 +375,60 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form name="modal-form" class="modal-form">
-          <label for="modal-name" class="name-label"> Имя </label>
-          <svg class="modal-name-icon" width="12px" height="12px">
-            <use href="./images/icons.svg#icon-name"></use>
-          </svg>
-          <input
-            type="text"
-            name="modal-name"
-            class="modal-name"
-            title="Введите своё имя"
-            id="modal-name"
-          />
-          <label for="modal-tel" class="tel-label"> Телефон </label>
-          <svg class="modal-tel-icon" width="14px" height="14px">
-            <use href="./images/icons.svg#icon-tel"></use>
-          </svg>
-          <input
-            type="tel"
-            name="modal-tel"
-            class="modal-tel"
-            title="Введите номер телефона"
-            id="modal-tel"
-          />
-          <label for="modal-email" class="email-label"> Почта </label>
-          <svg class="modal-email-icon" width="16px" height="12px">
-            <use href="./images/icons.svg#icon-email"></use>
-          </svg>
-          <input
-            type="email"
-            name="modal-email"
-            class="modal-email"
-            title="Введите свой почтовый ящик"
-            id="modal-email"
-          />
+          <label for="modal-name" class="name-label">
+            Имя
+            <span class="modal-form-wrapper">
+              <input
+                type="text"
+                name="modal-name"
+                class="modal-name"
+                title="Введите своё имя"
+                id="modal-name"
+              />
+              <span class="modal-icon">
+                <svg class="modal-name-icon" width="12px" height="12px">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </span>
+            </span>
+          </label>
+          <label for="modal-tel" class="tel-label">
+            Телефон
+            <span class="modal-form-wrapper">
+              <input
+                type="tel"
+                name="modal-tel"
+                class="modal-tel"
+                title="Введите номер телефона"
+                id="modal-tel"
+              />
+              <span class="modal-icon">
+                <svg class="modal-tel-icon" width="14px" height="14px">
+                  <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+              </span>
+            </span>
+          </label>
+
+          <label for="modal-email" class="email-label">
+            Почта
+
+            <span class="modal-form-wrapper">
+              <input
+                type="email"
+                name="modal-email"
+                class="modal-email"
+                title="Введите свой почтовый ящик"
+                id="modal-email"
+              />
+              <span class="modal-icon">
+                <svg class="modal-email-icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </span>
+            </span>
+          </label>
+
           <label for="modal-comment" class="comment-label"> Комментарий </label>
           <textarea
             name="modal-comment"
@@ -417,20 +438,20 @@
             placeholder="Введите текст"
           ></textarea>
           <div class="agreemet-wrapper">
-            <svg class="modal-check-icon" width="13px" height="10px">
+            <!--             <svg class="modal-check-icon" width="13px" height="10px">
               <use href="./images/icons.svg#icon-check"></use>
-            </svg>
+            </svg> -->
             <input
               type="checkbox"
               name="modal-agreement"
-              class="modal-agreement"
-              title="Введите своё имя"
+              class="modal-agreement visually-hidden"
+              title=""
               id="modal-agreement"
             />
             <label for="modal-agreement" class="agreement-label">
               Соглашаюсь с рассылкой и принимаю &nbsp;
+              <a class="agreemet-link" href="">Условия договора</a>
             </label>
-            <a class="agreemet-link" href="">Условия договора</a>
           </div>
           <button class="submit-btn" type="submit">Отправить</button>
         </form>
