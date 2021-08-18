@@ -930,3 +930,68 @@ footer {
 .modal-form-wrapper {
   position: relative;
 }
+
+.distribution-block-footer {
+  display: flex;
+  margin-left: auto;
+  justify-content: last baseline;
+  flex-direction: column;
+}
+
+.distribution-form-email {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 12px;
+  outline: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  background-color: transparent;
+}
+
+.distribution-form-email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.distribution-sign-in-btn {
+  /*   position: relative; */
+  display: inline-flex;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  margin-left: 10px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  text-align: left;
+  padding-left: 29px;
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+}
+.email-send-icon {
+  /*   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 28px; */
+  margin-left: 10px;
+  fill: #ffffff;
+}
+
+.distribution-block-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
