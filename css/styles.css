@@ -774,7 +774,8 @@ footer {
   cursor: pointer;
 }
 
-.close-modal:hover {
+.close-modal:hover,
+.close-modal:focus {
   fill: var(--fill-accent);
 }
 /* ============== Modal Window CONTENT ===============*/
