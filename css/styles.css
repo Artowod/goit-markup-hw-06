@@ -172,6 +172,8 @@ ul {
 
 .hero .order-service-btn {
   margin-top: 30px;
+  width: 200px;
+  height: 50px;
 }
 
 .hero-title {
@@ -630,8 +632,7 @@ footer {
 
 .page-footer .container {
   display: flex;
-  justify-content: start;
-  align-items: start;
+  align-items: baseline;
 }
 
 .footer-logo-address {
