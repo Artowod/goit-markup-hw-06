@@ -776,6 +776,9 @@ footer {
   cursor: pointer;
 }
 
+.close-modal:hover {
+  fill: var(--fill-accent);
+}
 /* ============== Modal Window CONTENT ===============*/
 .modal {
   display: flex;
@@ -890,7 +893,6 @@ footer {
 
 .modal-agreement:focus + .agreement-label::before {
   outline: 1px solid rgba(20, 20, 39, 0.5);
-  border-radius: 2px;
 }
 
 .agreemet-link {
